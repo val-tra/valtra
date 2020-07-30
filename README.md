@@ -1,6 +1,15 @@
-# valtra
+# Flambeaux ValTra website
 
-## Build Setup
+This repo is the source code for the website of the Flambeaux ValTra scout group.
+The site is built on top of [nuxt.js](nuxtjs.org).
+
+## Get source code
+
+```bash
+git clone git@github.com:val-tra/valtra.git
+```
+
+## Setup for local developement
 
 ```bash
 # install dependencies
@@ -8,13 +17,4 @@ $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
