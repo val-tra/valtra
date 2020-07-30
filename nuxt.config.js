@@ -28,12 +28,14 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/style/carbon.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/carbon.js', mode: 'client' }
   ],
   /*
   ** Auto import components
