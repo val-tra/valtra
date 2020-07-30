@@ -11,7 +11,10 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "@carbon/icons-vue": "^10.14.0",
+    "@carbon/vue": "^2.30.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "carbon-components": "^10.16.0",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
