@@ -1,0 +1,21 @@
+name: App test procedure
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Setup dependencies
+        run: npm ci
+      - name: Running linting
+        run: npm run lint
+      - run: npm run generate
