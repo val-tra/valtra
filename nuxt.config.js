@@ -17,7 +17,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || 'Flambeaux ValTra',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,12 +25,19 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: 'https://use.fontawesome.com/releases/v5.3.1/js/all.js',
+        defer: true
+      }
     ]
   },
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/bulma.scss'
   ],
   /*
   ** Plugins to load before mounting the App
