@@ -1,4 +1,11 @@
 /**
- * Carbon design imports
+ * Carbon design import and base configuration
  */
-@import "carbon-components/scss/globals/scss/styles";
+
+// Grid configuration
+$feature-flags: (
+  grid-columns-16: true
+);
+
+// Ligrary import
+@import "carbon-components/scss/globals/scss/styles.scss";
