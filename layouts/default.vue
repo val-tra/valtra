@@ -53,6 +53,16 @@
         </div>
       </div>
     </nav>
-    <Nuxt />
+    <div class="bd-main">
+      <div class="aside-background" />
+      <Nuxt />
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <h1 class="title">
+          Hello les amis
+        </h1>
+      </div>
+    </footer>
   </div>
 </template>

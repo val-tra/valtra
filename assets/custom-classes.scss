@@ -1,0 +1,39 @@
+/**
+ * Some custom and specific styling
+ */
+
+// bd-* classes are for main containers adjustments
+.bd-main {
+  overflow: hidden;
+  position: relative;
+}
+
+.bd-duo {
+  display: flex;
+}
+
+.bd-aside {
+  padding: $size-1 $size-4 $size-1 0;
+  position: relative;
+  flex: 0 0 calc(10.5rem + 1.5rem);
+  background-color: $white-bis;
+}
+
+.bd-lead {
+  margin-right: -$size-1;
+  padding: $size-1;
+  background-color: $white;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+// Special background for the left menu
+.aside-background {
+  position: absolute;
+  background-color: $white-bis;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 50%;
+}
