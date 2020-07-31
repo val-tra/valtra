@@ -1,0 +1,11 @@
+/**
+ * Imports for bulma ui framework
+ */
+
+@charset "utf-8";
+
+// Import custom vars modifications
+@import "@/assets/custom-vars.scss";
+
+// Import bulma components
+@import "bulma/bulma.sass";
