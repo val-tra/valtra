@@ -117,18 +117,24 @@
           <div class="navbar-end">
             <!-- Contact -->
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
+              <nuxt-link class="navbar-link" to="/contact/notre-local">
                 <span class="icon">
                   <i class="fas fa-map-marker-alt" />
                 </span>
-                <span>Contact / Ou</span>
-              </a>
+                <span>Ou / Contact</span>
+              </nuxt-link>
 
               <div class="navbar-dropdown is-right">
-                <a class="navbar-item">Notre Local</a>
-                <a class="navbar-item">Rendez-vous des séances</a>
+                <nuxt-link class="navbar-item" to="/contact/notre-local">
+                  Notre Local
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/contact/rdv-seances">
+                  Rendez-vous des séances
+                </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Contact</a>
+                <nuxt-link class="navbar-item" to="/contact">
+                  Contact
+                </nuxt-link>
               </div>
             </div>
             <!-- LOG IN -->
