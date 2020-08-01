@@ -11,7 +11,6 @@ export default {
   target: 'static',
   router: {
     base: '/valtra/',
-    linkActiveClass: 'is-active',
     linkExactActiveClass: 'is-active'
   },
   /*

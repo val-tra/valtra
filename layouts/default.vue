@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="default-layout">
     <nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
@@ -24,17 +24,23 @@
           <div class="navbar-start">
             <!-- PRESENTATION -->
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
+              <nuxt-link class="navbar-link" to="/presentation">
                 <span class="icon">
                   <i class="fas fa-eye" />
                 </span>
                 <span>Présentation</span>
-              </a>
+              </nuxt-link>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">Qui sommes nous</a>
-                <a class="navbar-item">Organisation du groupe</a>
-                <a class="navbar-item">L'équipe de responsables</a>
+                <nuxt-link class="navbar-item" to="/presentation/qui-sommes-nous">
+                  Qui sommes nous
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/presentation/organisation-du-groupe">
+                  Organisation du groupe
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/presentation/responsables">
+                  L'équipe de responsables
+                </nuxt-link>
                 <hr class="navbar-divider">
                 <a class="navbar-item">Le scoutisme</a>
                 <a class="navbar-item">But du scoutisme</a>
@@ -115,10 +121,12 @@
         </div>
       </div>
     </nav>
+    <!-- MAIN CONTENT -->
     <div class="bd-main">
       <div class="aside-background" />
       <Nuxt />
     </div>
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <h1 class="title">
