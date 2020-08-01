@@ -10,7 +10,9 @@ export default {
   */
   target: 'static',
   router: {
-    base: '/valtra/'
+    base: '/valtra/',
+    linkActiveClass: 'is-active',
+    linkExactActiveClass: 'is-active'
   },
   /*
   ** Headers of the page
@@ -37,7 +39,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/bulma.scss'
+    '@/assets/bulma.scss',
+    '@/assets/page-transition.scss'
   ],
   /*
   ** Plugins to load before mounting the App
