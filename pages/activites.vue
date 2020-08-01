@@ -3,36 +3,69 @@
     <div class="bd-duo">
       <aside aside class="menu bd-aside">
         <p class="menu-label">
-          General
+          Résumé
         </p>
         <ul class="menu-list">
-          <li><a>Dashboard</a></li>
-          <li><a>Customers</a></li>
-        </ul>
-        <p class="menu-label">
-          Administration
-        </p>
-        <ul class="menu-list">
-          <li><a>Team Settings</a></li>
           <li>
-            <a class="is-active">Manage Your Team</a>
-            <ul>
-              <li><a>Members</a></li>
-              <li><a>Plugins</a></li>
-              <li><a>Add a member</a></li>
-            </ul>
+            <nuxt-link to="/activites">
+              Nos activités
+            </nuxt-link>
           </li>
-          <li><a>Invitations</a></li>
-          <li><a>Cloud Storage Environment Settings</a></li>
-          <li><a>Authentication</a></li>
+          <li>
+            <nuxt-link to="/activites/prochain-semestre">
+              Prochain semestre
+            </nuxt-link>
+          </li>
         </ul>
         <p class="menu-label">
-          Transactions
+          Branches
         </p>
         <ul class="menu-list">
-          <li><a>Payments</a></li>
-          <li><a>Transfers</a></li>
-          <li><a>Balance</a></li>
+          <li>
+            <nuxt-link to="/activites/louveteaux">
+              Louveteaux (7-11 ans)
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/activites/eclaireurs">
+              Eclaireurs (12-16 ans)
+            </nuxt-link>
+          </li>
+        </ul>
+        <p class="menu-label">
+          Toutes les activités
+        </p>
+        <ul class="menu-list">
+          <li>
+            <nuxt-link to="/activites/week-ends">
+              Week-ends
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/activites/camps">
+              Camps
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/activites/calendrier">
+              Calendrier complet
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/activites/lieux-et-horaires">
+              Lieux et horaires classique
+            </nuxt-link>
+          </li>
+        </ul>
+        <p class="menu-label">
+          Infos utiles
+        </p>
+        <ul class="menu-list">
+          <li>
+            <nuxt-link to="/activites/infos">
+              Infos utiles
+            </nuxt-link>
+          </li>
         </ul>
       </aside>
       <div class="bd-lead">

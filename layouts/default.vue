@@ -49,43 +49,67 @@
 
             <!-- ACTIVITES -->
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
+              <nuxt-link class="navbar-link" to="/activites">
                 <span class="icon">
                   <i class="fas fa-compass" />
                 </span>
                 <span>Activités</span>
-              </a>
+              </nuxt-link>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">Prochain semestre</a>
+                <nuxt-link class="navbar-item" to="/activites/prochain-semestre">
+                  Prochain semestre
+                </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Louveteaux (7-11ans)</a>
-                <a class="navbar-item">Eclaireurs (12-16ans)</a>
+                <nuxt-link class="navbar-item" to="/activites/louveteaux">
+                  Louveteaux (7-11ans)
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/eclaireurs">
+                  Eclaireurs (12-16ans)
+                </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Week-ends</a>
-                <a class="navbar-item">Camps</a>
-                <a class="navbar-item">Calendrier complet</a>
-                <a class="navbar-item">Lieux et horaires classique</a>
+                <nuxt-link class="navbar-item" to="/activites/week-ends">
+                  Week-ends
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/camps">
+                  Camps
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/calendrier">
+                  Calendrier complet
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/lieux-et-horaires">
+                  Lieux et horaires classique
+                </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Infos utiles</a>
+                <nuxt-link class="navbar-item" to="/activites/infos">
+                  Infos utiles
+                </nuxt-link>
               </div>
             </div>
 
             <!-- DOCUMENTS -->
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
+              <nuxt-link class="navbar-link" to="/documents">
                 <span class="icon">
                   <i class="fas fa-file-alt" />
                 </span>
                 <span>Documents</span>
-              </a>
+              </nuxt-link>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">Photos</a>
-                <a class="navbar-item">Nous rejoindre</a>
-                <a class="navbar-item">PV assemblées générales</a>
+                <nuxt-link class="navbar-item" to="/documents/photos">
+                  Photos
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/documents/nous-rejoindre">
+                  Nous rejoindre
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/documents/pv">
+                  PV assemblées générales
+                </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Liens externes</a>
+                <nuxt-link class="navbar-item" to="/documents/liens-externes">
+                  Liens externes
+                </nuxt-link>
               </div>
             </div>
           </div>
