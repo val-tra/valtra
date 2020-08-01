@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div id="default-layout">
     <nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
+          <nuxt-link class="navbar-item" to="/">
             <img src="~/assets/logo.svg" width="112" height="40">
-          </a>
+          </nuxt-link>
 
           <a
             role="button"
@@ -22,24 +22,122 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item">Home</a>
-
-            <a class="navbar-item">Documentation</a>
-
+            <!-- PRESENTATION -->
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">More</a>
+              <nuxt-link class="navbar-link" to="/presentation">
+                <span class="icon">
+                  <i class="fas fa-eye" />
+                </span>
+                <span>Présentation</span>
+              </nuxt-link>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">About</a>
-                <a class="navbar-item">Jobs</a>
-                <a class="navbar-item">Contact</a>
+                <nuxt-link class="navbar-item" to="/presentation/qui-sommes-nous">
+                  Qui sommes nous
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/presentation/organisation-du-groupe">
+                  Organisation du groupe
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/presentation/responsables">
+                  L'équipe de responsables
+                </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Report an issue</a>
+                <a class="navbar-item">Le scoutisme</a>
+                <a class="navbar-item">But du scoutisme</a>
+              </div>
+            </div>
+
+            <!-- ACTIVITES -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <nuxt-link class="navbar-link" to="/activites">
+                <span class="icon">
+                  <i class="fas fa-compass" />
+                </span>
+                <span>Activités</span>
+              </nuxt-link>
+
+              <div class="navbar-dropdown">
+                <nuxt-link class="navbar-item" to="/activites/prochain-semestre">
+                  Prochain semestre
+                </nuxt-link>
+                <hr class="navbar-divider">
+                <nuxt-link class="navbar-item" to="/activites/louveteaux">
+                  Louveteaux (7-11ans)
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/eclaireurs">
+                  Eclaireurs (12-16ans)
+                </nuxt-link>
+                <hr class="navbar-divider">
+                <nuxt-link class="navbar-item" to="/activites/week-ends">
+                  Week-ends
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/camps">
+                  Camps
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/calendrier">
+                  Calendrier complet
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/activites/lieux-et-horaires">
+                  Lieux et horaires classique
+                </nuxt-link>
+                <hr class="navbar-divider">
+                <nuxt-link class="navbar-item" to="/activites/infos">
+                  Infos utiles
+                </nuxt-link>
+              </div>
+            </div>
+
+            <!-- DOCUMENTS -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <nuxt-link class="navbar-link" to="/documents">
+                <span class="icon">
+                  <i class="fas fa-file-alt" />
+                </span>
+                <span>Documents</span>
+              </nuxt-link>
+
+              <div class="navbar-dropdown">
+                <nuxt-link class="navbar-item" to="/documents/photos">
+                  Photos
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/documents/nous-rejoindre">
+                  Nous rejoindre
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/documents/pv">
+                  PV assemblées générales
+                </nuxt-link>
+                <hr class="navbar-divider">
+                <nuxt-link class="navbar-item" to="/documents/liens-externes">
+                  Liens externes
+                </nuxt-link>
               </div>
             </div>
           </div>
 
           <div class="navbar-end">
+            <!-- Contact -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <nuxt-link class="navbar-link" to="/contact/notre-local">
+                <span class="icon">
+                  <i class="fas fa-map-marker-alt" />
+                </span>
+                <span>Ou / Contact</span>
+              </nuxt-link>
+
+              <div class="navbar-dropdown is-right">
+                <nuxt-link class="navbar-item" to="/contact/notre-local">
+                  Notre Local
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/contact/rdv-seances">
+                  Rendez-vous des séances
+                </nuxt-link>
+                <hr class="navbar-divider">
+                <nuxt-link class="navbar-item" to="/contact">
+                  Contact
+                </nuxt-link>
+              </div>
+            </div>
+            <!-- LOG IN -->
             <div class="navbar-item">
               <div class="buttons">
                 <a class="button is-light">
@@ -53,6 +151,18 @@
         </div>
       </div>
     </nav>
-    <Nuxt />
+    <!-- MAIN CONTENT -->
+    <div class="bd-main">
+      <div class="aside-background" />
+      <Nuxt />
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <h1 class="title">
+          Hello les amis
+        </h1>
+      </div>
+    </footer>
   </div>
 </template>

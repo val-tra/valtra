@@ -10,7 +10,8 @@ export default {
   */
   target: 'static',
   router: {
-    base: '/valtra/'
+    base: '/valtra/',
+    linkExactActiveClass: 'is-active'
   },
   /*
   ** Headers of the page
@@ -24,7 +25,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/valtra/favicon.ico' }
     ],
     script: [
       {
@@ -37,7 +38,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/bulma.scss'
+    '@/assets/bulma.scss',
+    '@/assets/page-transition.scss'
   ],
   /*
   ** Plugins to load before mounting the App
