@@ -12,11 +12,13 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <div class="content">
-        <nuxt-content :document="page" />
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <nuxt-content :document="page" />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 

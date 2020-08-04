@@ -59,6 +59,9 @@
           </p>
           <p class="flb-footer-link">
             <nuxt-link to="/">
+              <span class="icon is-small">
+                <i class="fas fa-external-link-alt" />
+              </span>
               Mouvement scout de suisse
             </nuxt-link>
           </p>
