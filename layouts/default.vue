@@ -42,8 +42,12 @@
                   L'équipe de responsables
                 </nuxt-link>
                 <hr class="navbar-divider">
-                <a class="navbar-item">Le scoutisme</a>
-                <a class="navbar-item">But du scoutisme</a>
+                <nuxt-link class="navbar-item" to="/presentation/le-scoutisme">
+                  Le scoutisme
+                </nuxt-link>
+                <nuxt-link class="navbar-item" to="/presentation/buts-du-scoutisme">
+                  But du scoutisme
+                </nuxt-link>
               </div>
             </div>
 
