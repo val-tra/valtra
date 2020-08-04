@@ -1,12 +1,9 @@
 <template>
-  <div id="default-layout">
+  <div id="homepage-layout">
     <!-- MAIN NAV -->
     <app-navigation />
     <!-- MAIN CONTENT -->
-    <div class="bd-main">
-      <div class="aside-background" />
-      <Nuxt />
-    </div>
+    <Nuxt />
     <!-- FOOTER -->
     <app-footer />
   </div>

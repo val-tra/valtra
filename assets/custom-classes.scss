@@ -37,3 +37,26 @@
   left: 0;
   right: 50%;
 }
+
+// Footer special text
+.flb-footer-links a {
+  color: currentColor;
+}
+
+.flb-footer-links a:hover {
+  color: $link;
+}
+
+.flb-footer-link-title {
+  //color: $black;
+  font-size: $size-5;
+  font-weight: $weight-semibold;
+}
+
+.flb-footer-link-title:not(:first-child) {
+  margin-top: $block-spacing;
+}
+
+.flb-footer-link {
+  margin-top: .5rem;
+}

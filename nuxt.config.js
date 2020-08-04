@@ -63,8 +63,12 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxt/content'
   ],
+  content: {
+    // Options
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
