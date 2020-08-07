@@ -140,6 +140,17 @@
               </nuxt-link>
             </div>
           </div>
+          <!-- Search-->
+          <div class="navbar-item">
+            <div class="field">
+              <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Recherche">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-search" />
+                </span>
+              </p>
+            </div>
+          </div>
           <!-- LOG IN -->
           <div class="navbar-item">
             <div class="buttons">

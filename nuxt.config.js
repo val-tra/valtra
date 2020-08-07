@@ -68,6 +68,7 @@ export default {
   ],
   content: {
     // Options
+    liveEdit: false
   },
   /*
   ** Build configuration
