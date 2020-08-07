@@ -14,9 +14,7 @@
     </section>
     <section class="section">
       <div class="container">
-        <div class="content">
-          <nuxt-content :document="page" />
-        </div>
+        <nuxt-content :document="page" />
       </div>
     </section>
   </div>
