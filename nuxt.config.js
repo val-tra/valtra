@@ -13,6 +13,7 @@ export default {
     base: '/valtra/',
     linkExactActiveClass: 'is-active',
     extendRoutes (routes, resolve) {
+      // Add an alias to redirect from search bar to index page when you search the home content file
       routes.push({
         path: '/home',
         redirect: { name: 'index' }
