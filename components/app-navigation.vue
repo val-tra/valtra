@@ -140,6 +140,8 @@
               </nuxt-link>
             </div>
           </div>
+          <!-- Search-->
+          <search-field />
           <!-- LOG IN -->
           <div class="navbar-item">
             <div class="buttons">

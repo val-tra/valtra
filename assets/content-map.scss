@@ -1,0 +1,7 @@
+/**
+ * Some nuxt-content class mapped to bulmas style
+ */
+
+.nuxt-content h1 {
+  @extend .title
+}

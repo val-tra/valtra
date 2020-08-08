@@ -1,6 +1,7 @@
 <template>
   <div id="home-page">
-    <section class="hero is-medium is-primary">
+    <!-- Homepage header -->
+    <section class="hero is-medium is-primary has-home-background-image">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -12,11 +13,10 @@
         </div>
       </div>
     </section>
+    <!-- Content for homepage -->
     <section class="section">
       <div class="container">
-        <div class="content">
-          <nuxt-content :document="page" />
-        </div>
+        <nuxt-content :document="page" />
       </div>
     </section>
   </div>

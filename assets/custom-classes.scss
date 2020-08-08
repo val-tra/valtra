@@ -38,6 +38,12 @@
   right: 50%;
 }
 
+// Special background image for the home menu
+.has-home-background-image {
+  background-image: url("~assets/images/home.jpg");
+  background-size: cover;
+}
+
 // Footer special text
 .flb-footer-links a {
   color: currentColor;
