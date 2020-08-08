@@ -15,3 +15,12 @@
 //   @extend .title;
 //   @extend .is-5;
 // }
+
+.nuxt-content h1 a,
+.nuxt-content h2 a,
+.nuxt-content h3 a,
+.nuxt-content h4 a,
+.nuxt-content h5 a,
+.nuxt-content h6 a {
+  display: none;
+}
