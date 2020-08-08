@@ -11,7 +11,13 @@ export default {
   target: 'static',
   router: {
     base: '/valtra/',
-    linkExactActiveClass: 'is-active'
+    linkExactActiveClass: 'is-active',
+    extendRoutes (routes, resolve) {
+      routes.push({
+        path: '/home',
+        redirect: { name: 'index' }
+      })
+    }
   },
   /*
   ** Headers of the page
