@@ -1,10 +1,11 @@
 # Flambeaux ValTra website
 
+![App test procedure](https://github.com/val-tra/valtra/workflows/App%20test%20procedure/badge.svg)
+
 This repo is the source code for the website of the Flambeaux ValTra scout group.
 The site is built on top of [nuxt.js](nuxtjs.org).
 
 > You can see dev version here [ValTra](http://val-tra.github.io/valtra/)
-![App test procedure](https://github.com/val-tra/valtra/workflows/App%20test%20procedure/badge.svg)
 
 ## Get source code
 

@@ -11,7 +11,14 @@ export default {
   target: 'static',
   router: {
     base: '/valtra/',
-    linkExactActiveClass: 'is-active'
+    linkExactActiveClass: 'is-active',
+    extendRoutes (routes, resolve) {
+      // Add an alias to redirect from search bar to index page when you search the home content file
+      routes.push({
+        path: '/home',
+        redirect: { name: 'index' }
+      })
+    }
   },
   /*
   ** Headers of the page
@@ -63,8 +70,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxt/content'
   ],
+  content: {
+    // Options
+    liveEdit: false
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
