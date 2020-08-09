@@ -16,7 +16,17 @@
     <!-- Content for homepage -->
     <section class="section">
       <div class="container">
-        <nuxt-content :document="page" />
+        <div class="columns">
+          <div class="column">
+            <nuxt-content :document="page" />
+          </div>
+          <div class="column is-4">
+            <h1 class="title">
+              Prochaines activités
+            </h1>
+            <up-next />
+          </div>
+        </div>
       </div>
     </section>
   </div>
