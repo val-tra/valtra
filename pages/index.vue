@@ -8,7 +8,7 @@
             Flambeaux du Val-de-travers
           </h1>
           <h2 class="subtitle">
-            Aventure - Amitiés - Nature
+            Scouts confesionnels au vallon
           </h2>
         </div>
       </div>
